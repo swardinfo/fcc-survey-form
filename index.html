@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!--meta-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width initial-scale=1.0">
+        <!--title-->
+        <title>Survey Form</title>
+        <!--css-->
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+    </head>
+    <body>
+        <main>
+            <!-- project requirement - h1 heading, id -->
+            <h1 id="title">Pizza Survey</h1>
+            <!-- project requirement - paragraph, id -->
+            <p id="description">How do you like your pizza</p>
+            <!-- project requirement - form, id -->
+            <form id="survey-form">
+                <div id="info-entry">
+                    <!-- project requirement - radio buttons with group name -->
+                    <div class="two-column">
+                        <!-- Left column crust radio buttons -->
+                        <fieldset>
+                            <legend>What's your favorite crust</legend>
+                            <label for="crust-type-0"><input id="crust-type-0" type="radio" name="crust-type" value="0" checked> Classic Crust</label>
+                            <label for="crust-type-1"><input id="crust-type-1" type="radio" name="crust-type" value="1"> Deep Pan</label>
+                            <label for="crust-type-2"><input id="crust-type-2" type="radio" name="crust-type" value="2"> Thin and Crispy</label>
+                            <label for="crust-type-3"><input id="crust-type-3" type="radio" name="crust-type" value="3"> Cheesy Crust</label>
+                        </fieldset>
+                        <!-- Right column sauce radio buttons -->
+                        <fieldset>
+                            <legend>What's your favorite sauce</legend>
+                            <label for="sauce-type-0"><input id="sauce-type-0" type="radio" name="sauce-type" value="0" checked> Pizza Sauce</label>
+                            <label for="sauce-type-1"><input id="sauce-type-1" type="radio" name="sauce-type" value="1" > Barbeque Sauce</label>
+                            <label for="sauce-type-2"><input id="sauce-type-2" type="radio" name="sauce-type" value="2"> American Cheese Sauce</label>
+                            <label for="sauce-type-3"><input id="sauce-type-3" type="radio" name="sauce-type" value="3"> No Sauce</label>
+                        </fieldset>
+                    </div>
+                    <div>
+                        <!-- project requirement - checkboxes with value -->
+                        <!-- toppings checkboxes -->
+                        <fieldset id="toppings">
+                            <legend>Select your favorite toppings</legend>
+                            <div class="two-column">
+                                <!-- Left column toppings 0 through 7 -->
+                                <div>
+                                    <label for="topping-0"><input id="topping-0" type="checkbox" name="topping-0" value="checked">Anchovies</label>
+                                    <label for="topping-1"><input id="topping-1" type="checkbox" name="topping-1" value="checked">Bacon</label>
+                                    <label for="topping-2"><input id="topping-2" type="checkbox" name="topping-2" value="checked">Basil</label>
+                                    <label for="topping-3"><input id="topping-3" type="checkbox" name="topping-3" value="checked">Beef (ground)</label>
+                                    <label for="topping-4"><input id="topping-4" type="checkbox" name="topping-4" value="checked">Capsicum</label>
+                                    <label for="topping-5"><input id="topping-5" type="checkbox" name="topping-5" value="checked">Chicken</label>
+                                    <label for="topping-6"><input id="topping-6" type="checkbox" name="topping-6" value="checked">Chilli</label>
+                                    <label for="topping-7"><input id="topping-7" type="checkbox" name="topping-7" value="checked">Cheese</label>
+                                </div>
+                                <!-- Right column toppings 8 through 14 -->
+                                <div>
+                                    <label for="topping-8"><input id="topping-8" type="checkbox" name="topping-8" value="checked">Ham</label>
+                                    <label for="topping-9"><input id="topping-9" type="checkbox" name="topping-9" value="checked">Mushroom</label>
+                                    <label for="topping-10"><input id="topping-10" type="checkbox" name="topping-10" value="checked">Onion</label>
+                                    <label for="topping-11"><input id="topping-11" type="checkbox" name="topping-11" value="checked">Oregano</label>
+                                    <label for="topping-12"><input id="topping-12" type="checkbox" name="topping-12" value="checked">Pepperoni</label>
+                                    <label for="topping-13"><input id="topping-13" type="checkbox" name="topping-13" value="checked">Pineapple</label>
+                                    <label for="topping-14"><input id="topping-14" type="checkbox" name="topping-14" value="checked">Prawns</label>
+                                </div>
+                            </div>
+                        </fieldset>
+                    </div>
+                    <!-- text and dropdown controls -->
+                    <div>
+                        <fieldset>
+                            <legend>About you</legend>
+                            <!-- Left column days per week & delivery selection -->
+                            <div id="about" class="two-column">
+                                <!-- <div id="text-dropdown"> -->
+                                <div>
+                                    <!-- project requirement - number label, id -->
+                                    <label id="number-label" for="number">
+                                        *Days per week you eat pizza:
+                                        <!-- project requirement -, number field, id, non number validation, min/max validation  -->
+                                        <input id="number" class="box" type="number" name="days" value="" min="0" max="7" placeholder="Enter days per week" required>
+                                    </label>
+                                    <label for="dropdown">*How do you get your pizza
+                                        <!-- project requirement - dropdown, id -->
+                                        <select id="dropdown" class="box" required>
+                                            <option value="" selected disabled>Please select</option>
+                                            <option value="0">Home delivery</option>
+                                            <option value="1">Take away</option>
+                                            <option value="2">Eat in</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <!-- Right column name & email -->
+                                <div>
+                                    <!-- project requirement - name label, id -->
+                                    <label id="name-label" for="name">
+                                        *Name:
+                                        <!-- project requirement - name field, id-->
+                                        <input id="name" class="box" type="text" name="name" value="" placeholder="Enter your name" required>
+                                    </label>
+                                    <!-- project requirement - email label, id -->
+                                    <label id="email-label" for="email">
+                                        *Email:
+                                        <!-- project requirement - email field, id , validation-->
+                                        <input id="email" class="box" type="email" name="email" value="" placeholder="Enter your Email" required>
+                                    </label>
+                                </div>
+                                <!-- </div> -->
+                            </div>
+                        </fieldset>
+                        <!-- comments -->
+                        <div>
+                            <label id="comments-label"> Any comments or suggestions?
+                                <!-- project requirement - textarea -->
+                                <textarea class="box" placeholder="Enter your comments here..." maxlength="600"></textarea>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <!-- project requirement - submit button -->
+                    <button id="submit" type="submit" formaction="#">Submit</button>
+                </div>
+            </form>
+        </main>
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

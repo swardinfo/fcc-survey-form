@@ -1,0 +1,193 @@
+/*
+pizza-lo-res.jpg original -> PIXNIO-1862130-5079x3386_Author_Devanath_CC0.jpg
+https://www.publicdomainpictures.net/en/view-image.php?image=242147&picture=pizza
+Copyright Karen Arnold
+Licence CC0 1.0 Universal (CC0 1.0) https://creativecommons.org/publicdomain/zero/1.0/
+*/
+
+/* #region global */
+
+/* Normalize styles */
+* {
+    box-sizing:border-box;
+    float:none;
+    margin:0;
+    padding:0;
+    font-size: 16px;
+    font-weight:normal;
+    line-height: 150%;
+    font-family: sans-serif, Arial, Helvetica;
+}
+
+html {
+    height: 100%;
+    width: 100%;
+    min-width: 280px;
+}
+
+/* flex used to vertically center all content when it's height is smaller than the viewport */
+body {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://raw.githubusercontent.com/swardinfo/fcc-tutorials/main/images/pizza-lo-res.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* #endregion global */
+
+/* #region main */
+
+main {
+    width: 100%;
+    max-width: 440px;
+    padding: 15px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.7);
+    color: rgba(255, 255, 255, 1);
+}
+
+#title {
+    text-align: center;
+}
+
+#description {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+h1{
+    font-size: 24px;
+}
+
+/* #region form */
+
+/* #region info-entry */
+
+#info-entry {
+    margin-bottom: 25px;
+}
+
+fieldset {
+    margin-bottom: 30px;
+    padding-top: 15px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    max-width: 97%;
+    margin-bottom: 15px;
+}
+
+input[type=radio], input[type=checkbox] {
+    transform: scale(1.4);
+}
+
+/* Space between radio button and its text */
+input[type=radio] {
+    margin-right: 5px;
+}
+
+/* Space between checkbox and its text */
+input[type=checkbox] {
+    margin-right: 9px;
+}
+
+/* input boxes, select, textarea */
+.box {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgba(140, 140, 140, 1);
+}
+
+/* input boxes, select */
+fieldset .box {
+    margin-top: 4px;
+    height: 36px;
+}
+
+select:invalid {
+    color: #757575 ;
+}
+
+option {
+    color: #000;
+}
+
+textarea {
+    resize: none;
+    height: 150px;
+    margin: 10px auto 25px auto;
+}
+
+/* #endregion info-entry */
+
+button {
+    display: block;
+    margin: 0 auto 15px auto;
+    background-color: rgba(240, 240, 240, 1);
+    border: 3px solid rgba(140, 140, 140, 1);
+    color: #000;
+    text-shadow: -2px 2px 3px rgba(140, 140, 140, 0.4);
+    border-radius: 999px;
+    height: 50px;
+    width: 200px;
+    font-size: 19px;
+}
+
+/* #endregion form */
+
+/* #region main */
+
+/* #region media queries */
+
+/* viewport width is wide enough so that using scroll bar won't interfere with entering text inputs */
+@media only screen and (min-width: 500px) {
+
+    label {
+        max-width: none;
+    }
+}
+
+/* viewport width is wide enough for two column layout */
+@media only screen and (min-width: 750px) {
+
+    main {
+        max-width: 680px;
+    }
+
+    #survey-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .two-column {
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+
+    fieldset {
+        margin: 0 0 30px 0;
+    }
+
+    label {
+        width: 250px;
+    }
+
+    #comments-label {
+        width: 100%;
+    }
+}
+
+/* #endregion media queries */
