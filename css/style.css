@@ -33,7 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://raw.githubusercontent.com/swardinfo/fcc-tutorials/main/images/pizza-lo-res.jpg") no-repeat;
+    background: linear-gradient( rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25) ), url("https://raw.githubusercontent.com/swardinfo/fcc-tutorials/main/images/pizza-lo-res.jpg") no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -153,6 +153,10 @@ button {
 
 /* viewport width is wide enough so that using scroll bar won't interfere with entering text inputs */
 @media only screen and (min-width: 500px) {
+
+    body {
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("https://raw.githubusercontent.com/swardinfo/fcc-tutorials/main/images/pizza-lo-res.jpg") no-repeat;
+    }
 
     label {
         max-width: none;
